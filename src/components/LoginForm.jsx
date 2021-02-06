@@ -22,14 +22,14 @@ const Modal = () => {
       window.location.reload();
       setError('');
     } catch (err) {
-      setError('Oops, incorrect credentials.');
+      setError('Blok,username ato pass mu salah.');
     }
   };
 
   return (
     <div className="wrapper">
       <div className="form">
-        <h1 className="title">Chat Hanan</h1>
+        <h1 className="title">Kuy Chat</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Nama" required />
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Pass mu" required />
